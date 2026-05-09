@@ -120,6 +120,7 @@ Input:
 Output:
 - mosaic_extent.shp  
 - Final shapefile stored in the folder: 👉 [**`Final Extent Shapefile/`**](https://github.com/theunknownxauthor/TriFusionBD/tree/main/ArcGIS_Pro_3/Final%20Extent%20Shapefile)
+  
 Method:
 
 - Extract raster extent using arcpy.Describe.

@@ -102,7 +102,9 @@ The script:
 
 Output:
 
-mosaic_all.tif
+- mosaic_all.tif
+- Output size: 1.33 GiB  
+  (greater than the repository upload limit of 25 MiB, therefore not included in this repository)
 
 This mosaic is used only to determine the full spatial extent of the dataset.
 
@@ -153,6 +155,8 @@ Processing in GEE:
 Generated files:
 - dem_mosaic_extent_project.tif
 - slope_mosaic_extent_project2.tif
+- Files size: 64 GMiB  and 39 MiB
+  (greater than the repository upload limit of 25 MiB, therefore not included in this repository)
 
 > [!IMPORTANT]
 > The native spatial resolution of SRTM DEM data is approximately 30 m, whereas the satellite imagery used in this study has a spatial resolution of approximately 1 m.  

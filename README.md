@@ -1,4 +1,4 @@
-# TriFusionBD – Building Segmentation from GeoTIFF (Test Repository)
+# TriFusionBD – Building Segmentation from GeoTIFF
 
 > **ℹ️ Note:** This repository provides a **quick test harness** for the pretrained **TriFusionBD** model.  
 > It is intended for **fast experimentation on small sample GeoTIFFs**.  
@@ -16,7 +16,7 @@
 > ```
 
 This repository provides a **lightweight test harness** for the pretrained **TriFusionBD** model to segment **buildings** on updated test images that combine **RGB + DEM + Slope** layers (5 bands).  
-The two provided test images (**1.tif** and **2.tif**) are extracted from the **test partition of the Massachusetts Buildings Dataset** and have been extended with DEM and slope channels for evaluation.  
+The two provided test images (**1.tif** and **2.tif**) are extracted from the **test partition of the Massachusetts Buildings Dataset** and have been extended with DEM and slope channels.  
 
 Although the preprocessing workflow in this repository was originally performed using **ArcGIS** (commercial software requiring a paid license), the visualization of the final preprocessing outputs can also be performed using the free and open-source **QGIS** software.  
 A detailed explanation of the QGIS visualization workflow is provided in the following sections.

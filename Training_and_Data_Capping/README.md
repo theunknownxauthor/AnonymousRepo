@@ -48,9 +48,9 @@ Create `requirements.txt`:
     rasterio
 
 ---
-## TriFusionBD – Principled Class Balancing, Training and Evaluation
+## TriFusionBD – Principled Class Balancing and Training
 
-This folder contains the Python implementation of the **Principled Data Capping and Class-Balancing Mechanism** and the full training/evaluation pipeline of the TriFusionBD model.
+This folder contains the Python implementation of the **Principled Data Capping and Class-Balancing Mechanism** and the full training pipeline of the TriFusionBD model.
 
 This module implements:
 
@@ -60,8 +60,7 @@ This module implements:
 4. 70–15–15 split control
 5. Model definition (TriFusion)
 6. Training
-7. Evaluation
-8. Full-image inference
+7. Full-image inference
 
 ---
 
@@ -261,7 +260,6 @@ This ensures:
 
 - No data leakage
 - Controlled dataset size
-- Balanced evaluation
 
 ---
 
@@ -332,20 +330,6 @@ TriFusion_Option_GAG_Bands_5_Global_35_Laten_50_Laten_16.h5
 The best validation model is saved using ModelCheckpoint.
 
 
-# 5️⃣ Evaluation
-
-After training:
-
-model.evaluate(test_gen)
-
-Metrics are computed on:
-
-- Balanced capped dataset
-- No tile overlap
-- No mixed splits
-
-This ensures fair performance comparison.
-
 ---
 
 # 6️⃣ Full-Image Inference
@@ -403,7 +387,6 @@ This folder contains the complete and reproducible implementation of:
 - Parameter-aware data capping
 - TriFusionBD architecture
 - Training pipeline
-- Evaluation
 - Full-image inference
 
 

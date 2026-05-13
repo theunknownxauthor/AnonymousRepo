@@ -332,7 +332,7 @@ The best validation model is saved using ModelCheckpoint.
 
 ---
 
-# 6️⃣ Full-Image Inference
+# 5️⃣  Full-Image Inference
 
 The script includes:predict_test_images()
 

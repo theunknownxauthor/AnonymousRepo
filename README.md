@@ -1,6 +1,6 @@
 # GeoKRL Model
 
-This directory contains the complete implementation of **GeoKRL**, a multimodal self-supervised geospatial foundation model designed to learn transferable representations from heterogeneous Earth observation data. It includes all components required for backbone pretraining, downstream transfer learning, dataset indexing, dynamic raster loading, balanced multimodal sampling, and experiment management.
+This directory contains the complete implementation of **GeoKRL**, a multimodal multi-task geospatial  model designed to learn transferable representations from heterogeneous Earth observation data. It includes all components required for backbone pretraining, downstream transfer learning, dataset indexing, dynamic raster loading, balanced multimodal sampling, and experiment management.
 
 The implementation is designed around an **on-demand data pipeline**, allowing large raster datasets to be processed without loading them entirely into memory.
 
@@ -11,11 +11,11 @@ The implementation is designed around an **on-demand data pipeline**, allowing l
 | File | Description |
 |------|-------------|
 | `GeoKRL.py` | Implementation of the GeoKRL backbone and downstream prediction models. |
-| `train.py` | Self-supervised backbone pretraining. |
+| `train.py` | multi-task backbone pretraining. |
 | `train_task.py` | Downstream transfer learning for population estimation, biomass estimation, and building prediction. |
 | `dataset_index.py` | Builds the hierarchical dataset index. |
 | `raster_manager.py` | Dynamic raster loading and patch extraction. |
-| `sample_generator.py` | On-demand sample generation for self-supervised learning. |
+| `sample_generator.py` | On-demand sample generation for multi-task learning. |
 | `sample_generator_task.py` | Sample generation for downstream prediction tasks. |
 | `modality_sampler.py` | Balanced multimodal sampling strategy. |
 | `batch_generator.py` | Mini-batch generator for backbone pretraining. |
@@ -147,7 +147,7 @@ modality_sampler.py
 
 # 5. Backbone Pretraining
 
-The GeoKRL backbone is trained using self-supervised multimodal learning.
+The GeoKRL backbone is trained using multi-task multimodal learning.
 
 The complete training pipeline is
 
@@ -264,7 +264,7 @@ model/
 └── auto_train_models/
 ```
 
-Each checkpoint corresponds to the configuration achieving the lowest validation loss during self-supervised pretraining.
+Each checkpoint corresponds to the configuration achieving the lowest validation loss during multi-task pretraining.
 
 ---
 
@@ -327,7 +327,7 @@ If you use GeoKRL in your research, please cite the accompanying publication onc
 
 ```
 @article{GeoKRL2026,
-  title   = {GeoKRL: A Multimodal Self-Supervised Foundation Model for Geospatial Representation Learning},
+  title   = {GeoKRL: A Multimodal multi-task  Model for Geospatial Representation Learning},
   author  = {...},
   journal = {...},
   year    = {2026}
